@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorgray">
+
+    <com.kingnet.UIpattern.Titledesign
+        android:id="@+id/titledesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/outlinear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/userinfotext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/grouplin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/colorwhite"
+        android:onClick="llClick">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/grouptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收件人姓名"/>
+            <TextView
+                android:id="@+id/grouptext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/colorblack"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/groupbutton"
+            android:background="@color/colorblack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/hidden_view"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/colororange"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/childimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorblack"/>
+        <TextView
+            android:id="@+id/childtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secgrouplin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/colorwhite"
+        android:onClick="llClick">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/secgrouptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隱私設定"/>
+            <TextView
+                android:id="@+id/secgrouptext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/colorblack"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/secgroupbutton"
+            android:background="@color/colorblack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sechidden_view"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/colororange"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/secchildimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorblack"/>
+        <TextView
+            android:id="@+id/secchildtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/userinfolisttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/userinfolistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <com.kingnet.UIpattern.BottomButton
+        android:id="@+id/buttombutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

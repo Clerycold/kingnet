@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kingnet">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera2.full" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.kingnet.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.kingnet.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/kingneticon"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <!-- .MainActivity 必須在這使用@style/startStyle -->
+        <activity
+            android:name=".ActivityHome.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/StartStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityCodeView.ViewBarcode" />
+        <activity android:name=".ActivityOpenUser.OpenCustomer" />
+        <activity android:name=".CommonProblem" />
+        <activity
+            android:name=".PackageFragment.UserHome_package"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".MoreInfoCommon"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ActivityLifeConvenience.LifeConvenience"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".PayManagement"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".UserMessageHome"
+            android:launchMode="singleTask" />
+        <activity android:name=".ActivityUserInfo.ActivityUserInfo"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".UserOpinion"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".UserBackOpinion"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".UserWriteOpinion"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask" />
+        <activity android:name=".MoreInfo.LifeGoodBuy" />
+        <activity android:name=".MoreInfo.AboutKingnet" />
+
+        <activity
+            android:name=".CountDetail"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".PublicUtilitiesHome"
+            android:launchMode="singleTask"/>
+        <activity android:name=".PublicUtilitesMoreDetail" />
+        <activity
+            android:name=".MyCamera2.UserCamera2"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".MyCamera.UserCamera"
+            android:launchMode="singleTask" />
+        <activity android:name=".ActivityCPCListMap.CPCListMapActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".GoogleMap.GoogleMap_activity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ActivityZoo.ZooActivity"
+            android:launchMode="singleTask"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBjAzLWNWxB_rfkGGTSBIyIruIGthqjDZY"/>
+
+        <receiver android:name="com.google.android.gms.gcm.GcmReceiver"
+        android:exported="true"
+        android:permission="com.google.android.c2dm.permission.SEND" >
+        <intent-filter>
+            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            <category android:name="com.tom.stock" />
+        </intent-filter>
+    </receiver>
+
+        <service android:name=".GcmUtils.MyGcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".GcmUtils.RegistrationIntentService"
+            android:exported="false">
+        </service>
+        <service android:name=".GcmUtils.MyInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

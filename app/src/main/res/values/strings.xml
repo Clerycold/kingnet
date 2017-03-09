@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">kingnet</string>
+    <string name="start_Experience">開始體驗</string>
+    <string name="isquit">再按一次返回鍵離開程式</string>
+    
+    <string name="homePageView">今網行動管家</string>
+    <string name="homePageView1_2">一手掌握社區大小事 便利您的生活</string>
+    <string name="homePageView2">包裹送達 即時通知</string>
+    <string name="homePageView2_2">出示手機條碼 取件好便利</string>
+    <string name="homePageView3">手機條碼 超商繳費</string>
+    <string name="homePageView3_2">免帶帳單好便利 顯示繳費情況通知</string>
+    <string name="homePageView4">重要公告 即時掌握</string>
+    <string name="homePageView4_2">會議紀錄、活動資訊 一手掌握</string>
+    <string name="homePageView5">新手上路 簡單說明</string>
+    
+    <string name="Adjustmentlight">調整亮度</string>
+    
+    <string name="barcodetext">一維條碼</string>
+    <string name="barcodetextcontent">請管理室人員掃描條碼</string>
+    <string name="barcodetextcontent2">開通身分/領取包裹/公設預約</string>
+    
+    <string name="othercontent">&#160;&#160;&#160;&#160;我要使用序號開通&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="qrcodetext">QR code</string>
+    
+    <string name="opencustomeropen">立 即 開 通</string>
+    <string name="opencustomerhelp">需要協助嗎?</string>
+    <string name="openhintmessage">請輸入序號(共8碼)</string>
+    <string name="openadtitle">今網行動管家訊息</string>
+    <string name="openadnonumber">未輸入登入序號</string>
+    <string name="openmakesure">確認</string>
+    <string name="openmislength">序號長度錯誤</string>
+    <string name="openagain">請輸入序號</string>
+    <string name="openagainnumber">請確認序號字數</string>
+    <string name="openexplanation">若您尚未開通，且尚未領取序號，請至管理室詢問(註：一個序號只能開通一支手機)</string>
+    
+    <string name="qaquestiongroup">Q1 如何完成身分確認?</string>
+    <string name="qaquestiongroup1">Q2 完成身分認證後，還可透過其他方式認證嗎?</string>
+    <string name="qaquestiongroup2">Q3 如何領取包裹?</string>
+
+    <string name="qaanswerchild">持手機上個人識別條碼、門禁感應扣或具可感應功能的卡片，如：悠遊卡、一卡通、ichas等載具，到管理室掃描嗶嗶，就可完成您的身份認證開通唷!</string>
+    <string name="qaanswerchild1">您可依據上述任一種載具開通身份，也可每種載具都進行開通，只要有到管理室完成身份開通的載具都可作為領取包裹使用</string>
+    <string name="qaanswerchild2">當您收到包裹領取通知後，帶著已開通認證的設備到管理室，由管理員進行掃描確認身份就可領取</string>
+
+    <string name="titlecommon">常見問題</string>
+    <string name="titlepackage">我的包裹通知</string>
+    <string name="titlelifeconvenience">生活便利通</string>
+    <string name="titlemoreinfo">更多</string>
+    <string name="titlemymessage">我的訊息</string>
+    <string name="titlekingnetselect">今網嚴選</string>
+    <string name="titleaboutkingnet">關於我們</string>
+    <string name="titleuserinfo">個人資訊</string>
+    <string name="titleuseropinion">您的意見反映</string>
+    <string name="titlecountdetail">公設點數</string>
+    <string name="titlepublicUtilities">公設預約</string>
+    <string name="titlenearcpc">附近加油站</string>
+
+    <string name="bottomhome">首頁</string>
+    <string name="bottompackage">我的包裹</string>
+    <string name="bottomcode">識別條碼</string>
+    <string name="bottominfo">個人資訊</string>
+    <string name="bottommore">更多</string>
+    <string name="bottompaymoney">管理費</string>
+    <string name="bottomuseropinion">意見反映</string>
+    <string name="bottompublic">公設預約</string>
+
+    <string name="packagetab1">未領取</string>
+    <string name="packagetab2">已領取</string>
+    <string name="packagetab3">退貨狀態</string>
+
+    <string name="moreinfogroup">我們的訊息通知</string>
+    <string name="moreinfogroup1">生活用品特惠好康</string>
+    <string name="moreinfogroup2">社區網路首選</string>
+    <string name="moreinfogroup3">關於我們</string>
+    <string name="moreinfogroup4">常見問題</string>
+    <string name="moreinfogroup5">在Google Play商店給我們評價吧!</string>
+
+    <string name="commonproblemtext">FAQs</string>
+
+    <string name="userinfotext">我的包裹-收件資料</string>
+    <string name="userinfocount">社區資料</string>
+    
+    <string name="gcm_sender_id">86447134727</string>
+    <string name="button_cancel">取消</string>
+    <string name="needReservation">需預約</string>
+
+    <string name="post_d1">冷藏</string>
+    <string name="post_d2">冷凍</string>
+
+</resources>

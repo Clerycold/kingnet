@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.kingnet.UIpattern.Titledesign
+        android:id="@+id/titledesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:id="@+id/userInfoScrll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/scrollral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorgray">
+
+            <TextView
+                android:id="@+id/userTxtNameEx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/colorblack"/>
+
+            <TextView
+                android:id="@+id/userTxtExPackOnLY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/colorblack"/>
+
+            <TextView
+                android:id="@+id/userTxtMessageEx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/colorblack"/>
+
+            <TextView
+                android:id="@+id/userTxtId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorblack"/>
+
+            <TextView
+                android:id="@+id/userTxtIdName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/colorblack"
+                android:background="@color/colorwhite"/>
+
+            <TextView
+                android:id="@+id/userTxtCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txt_green"
+                android:textSize="13sp"
+                android:textColor="@color/colorGreen"/>
+            <TextView
+                android:id="@+id/userTxtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/colorblack"
+                android:background="@color/colorwhite"/>
+            <TextView
+                android:id="@+id/userTxtMoreEx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBluewater"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.kingnet.UIpattern.BottomButton
+        android:id="@+id/buttombutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

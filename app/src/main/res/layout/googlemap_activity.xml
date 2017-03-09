@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.kingnet.UIpattern.Titledesign
+        android:id="@+id/titledesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:layout_below="@+id/titledesign"
+        android:layout_above="@+id/maptxtstation"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+    <TextView
+        android:id="@+id/maptxtstation"
+        android:textColor="@color/colorMainlight"
+        android:background="@color/colorwhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/maptxtaddress"
+        android:background="@color/colorwhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+</RelativeLayout>

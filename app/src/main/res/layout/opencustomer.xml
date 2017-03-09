@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain">
+
+    <ImageView
+        android:id="@+id/opencustomer_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <!--drawableleft -->
+    <EditText
+        android:id="@+id/opencustomer_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:textCursorDrawable="@drawable/bg_edittext_color_cursor"
+        android:textSize="14sp"
+        android:maxLength="8"
+        android:hint="@string/openhintmessage"
+        android:textColor="@color/colorblack"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:drawableLeft="@drawable/ic_launcher"/>
+    <Button
+        android:id="@+id/opencustomer_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorNavybule"
+        android:text="@string/opencustomeropen"
+        android:textColor="@color/colorwhite"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/opencustomer_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="@string/opencustomerhelp"
+        android:textColor="@color/colorwhite"
+        />
+    <TextView
+        android:id="@+id/openCustomer_Explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorgray"
+        android:textSize="13sp"/>
+
+
+</RelativeLayout>
